@@ -1,0 +1,252 @@
+*{
+	font-family: Lato, Merriweather, Typewolf, Verdana;
+}
+img{
+	width: 1294px;
+}
+body{
+	background-color: #c8bdbd; /*#6d6d6d;*/
+	color: /*#6d6d6d;*/#444444;
+	/*text-align: center;*/
+	font-size: 15px;
+	/*color: white;*/
+}
+h1{ 
+	color: white;
+	font: Typewolf;
+	border: 2px #444444;
+	background-color: #444444;
+	padding: 5px;
+}
+
+footer{
+	background-color: #262626;
+	text-align: center;
+	font-size: 15px;
+	color: white;
+}
+.image-container{
+	position: relative;
+	display: inline-block;
+}
+.image-text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	text-align: center;
+	z-index: 2;
+	padding: 20px;
+	background: rgba (0,0,0,0.5);
+	border-radius: 10px;
+	max-width:80%;
+}
+.image-text  h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.image-text p {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+nav{
+	background: #262626;
+	height: 80px;
+	width: 100%;
+}
+label.logo{
+	color: white;
+	font-size:35px;
+	line-height:80px;
+	padding: 0 80px;
+	font-weight: bold;
+}
+nav ul{
+	float: right;
+	margin-right:20px;
+}
+nav ul li{ 
+	display:inline-block;
+	line-height:80px;
+	margin: 0 5px; 
+}
+nav ul li a{
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius:3px;
+	text-transform:uppercase;
+}
+a.active, a:hover{ 
+	background: /*#1b9bff*/#cdbab5;
+	transition: .5s;
+}
+.checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 8px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display: none;
+}
+@media (max-width: 952px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 16px;	
+	}
+}
+@media (max-width: 858px){
+	.chckbtn{
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width:100%;
+		height: 100vh;
+		background: /*#2c3e50*/#cdbab5;
+		top: 80px;
+		left: -100%;
+		text-align: center;	
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block; 
+		margin:5px 0;
+		line-height:30px;
+	}
+	nav ul li a{
+		font-size: 20px;
+	}
+	a:hover, a.active{
+		background: none;
+		color:#0082e6;
+	}
+	#check:checked ~ ul{
+		left:0;
+	}
+}
+
+
+
+/*gallery*/
+		.container {
+			/*max-width: 1200px;*/
+			margin: 0 auto;
+			
+		}
+
+		.gallery {
+			display: flex;
+			flex-wrap: wrap;
+			margin: -5px;
+		}
+
+		.photo {
+			width: calc(33.333% - 10px);
+			margin: 5px;
+			position: relative;
+			cursor: pointer;
+		}
+
+		.photo img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.photo:hover .overlay {
+			display: flex;
+		}
+
+		.overlay {
+			display: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(0, 0, 0, 0.5);
+			color: #fff;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			padding: 10px;
+			transition: display 0.5s ease;
+		}
+
+		.overlay h3 {
+			margin-top: 0;
+			font-size: 24px;
+			font-weight: normal;
+			text-transform: capitalize;
+		}
+
+		.overlay p {
+			margin: 10px 0 0 0;
+			font-size: 16px;
+			font-weight: normal;
+		}
+
+
+/* CSS styles for the form */
+      form {
+        width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid /*#ccc*/#4e4c4a;
+      }
+      /*label {
+        display: block;
+        margin-bottom: 10px;*/
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #555;
+      }
+
+
+
+
+
+
+
+/*reference*/
+.reference{
+	text-align: center;
+}
